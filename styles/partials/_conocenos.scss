@@ -1,0 +1,61 @@
+/* Main Conocenos */
+
+.mainConocenos{
+    padding-top: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+
+    h1{
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+
+    .textoHistoria{
+        padding: 2% 2% 1% 2%;
+        margin-left: 1%;
+        margin-right: 1%;
+        background-color: $marronclaro;
+        border-radius: 20px;
+        text-align: justify;    
+    }
+    
+    .imgsHistoria{
+        padding: 2% 2% 1% 2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .imgQuique{   
+        width: 40%;
+        border-radius: 20px;
+        margin-right: 2%;
+    }
+    
+    .imgCarras{
+        width: 40%;
+        border-radius: 20px;
+        margin-left: 2%;
+    }
+}
+
+/* Responsive Conocenos */
+@media screen and (max-width: 768px) {
+    .imgsHistoria{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .imgQuique{
+      width: 85%;
+      height: 100%;
+      margin: 2%;
+    }
+
+    .imgCarras{
+      width: 85%;
+      height: 100%;
+      margin: 2%;
+    }
+}

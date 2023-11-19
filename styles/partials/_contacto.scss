@@ -1,0 +1,53 @@
+/* Main Contacto */
+
+.contenidoContacto{
+    padding-top: 1%;
+    padding-left: 2%;
+
+    .horariosUbicacion{
+        padding: 1% 1% 6% 3%;
+        display: flex;
+        flex-direction: wrap;    
+    }
+    
+    .horariosAtencion{
+        background-color: $marronclaro;
+        border-radius: 20px;
+        margin-right: 5%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        padding: 2% 2% 2% 2%;
+        text-align: center;
+
+        h2{
+            font-weight: bold;
+        }
+    }
+
+    .mapaContacto{
+        width: 200%;
+        height: 18.75rem;
+    }
+    
+    .btnContacto{
+        background-color: $marronclaro;
+        padding: 1% 1%;
+    }
+}
+
+/* Responsive Contacto */
+@media screen and (max-width: 768px) {
+    .horariosUbicacion {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    iframe{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .horariosAtencion {
+      margin: 10px 0;
+    }
+}

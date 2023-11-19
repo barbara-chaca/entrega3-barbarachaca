@@ -1,0 +1,102 @@
+/* Main Productos */
+
+.mainProductos {
+    padding-top: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+
+    h1 {
+       font-weight: bold;
+       text-align: center;
+       margin-bottom: 3%;
+    }
+
+    h2 {
+        font-weight: bold;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    .contenedorAlimento {
+        padding-bottom: 2%;
+
+        .cuadroAlimentoBalanceado{
+            padding-top: 2%;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-bottom: 1%;
+            background-color: $marronclaro;
+            border-radius: 20px;
+        }
+        
+        .containerProductos{
+            margin-top: 2%;
+            margin-bottom: 2%;
+            width: 80%;
+        }
+        
+        .imgBalanceadoPerro{
+            width: 80%;
+        }
+        
+        .imgBalanceadoGato{
+            width: 95%;
+        }
+    }
+     
+    .contenedorAyJ{
+        padding-top: 3%;
+        padding-bottom: 2%;
+
+        .cuadroAccesoriosyJuguetes{
+            padding-top: 2%;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-bottom: 1%;
+            background-color: $marronclaro;
+            border-radius: 20px;
+        }
+        
+        .imgAccesorios{
+            width: 73%;
+        }
+        
+        .imgJuguetes{
+            width: 90%;
+        }
+    }
+    
+        
+    .contenedorPyM{
+        padding-top: 3%;
+        padding-bottom: 5%;
+
+        .cuadroPipetasyMas{
+            padding-top: 2%;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-bottom: 1%;
+            background-color: $marronclaro;
+            border-radius: 20px;
+        }
+        
+        .imgPipeta{
+            width: 97%;
+        } 
+        
+        .imgVacuna{
+            width: 100%;
+        }
+    }
+       
+}

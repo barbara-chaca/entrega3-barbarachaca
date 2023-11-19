@@ -1,0 +1,38 @@
+/* Main Index */
+
+.banner {
+    background-image: url(../imagenes/backgroundimageindex.png);
+    padding: 15% 0%;
+    background-size: cover;
+    background-position: center;
+  
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      color: #fff;
+      text-shadow: -5px -3px 4px rgba(34, 34, 34, 0.925);
+    }
+  }
+  
+  .col-md-4 {
+    padding: 3% 2% 2% 1%;
+  }
+  
+  .cardIndex {
+    background-color: $marronclaro;
+    box-shadow: rgb(104, 49, 11) 5px 7px 7px;
+  
+    .card-title {
+      text-align: center;
+      font-weight: bold;
+    }
+  
+    .cardIndexText {
+      text-align: center;
+    }
+  
+    &:hover {
+      filter: opacity(0.5);
+    }
+  }

@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Manjari&family=Nunito&family=Raleway&family=Ubuntu&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #87aeb6;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+header .nav-link {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+/*Footer*/
+footer {
+  background-color: #87aeb6;
+  color: aliceblue;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+footer .contenidoFooter {
+  display: grid;
+  grid-template-areas: "instagram whatsapp" "facebook map";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  padding-top: 1%;
+  gap: 5px;
+}
+footer .contenidoFooter img {
+  width: 20px;
+  height: 20px;
+}
+footer .instagram {
+  grid-area: instagram;
+  display: flex;
+  flex-direction: row;
+}
+footer .instagram .pig {
+  padding-left: 2%;
+}
+footer .facebook {
+  grid-area: facebook;
+  display: flex;
+  flex-direction: row;
+}
+footer .facebook .pfb {
+  text-align: center;
+  padding-left: 2%;
+}
+footer .whatsapp {
+  grid-area: whatsapp;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+footer .whatsapp .pwp {
+  padding-right: 1%;
+  padding-left: 1%;
+}
+footer .map {
+  grid-area: map;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .contenidoFooter {
+    grid-template-areas: "instagram" "whatsapp" "facebook" "map";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 5px;
+  }
+  .contenidoFooter .whatsapp {
+    justify-content: flex-start;
+  }
+  .contenidoFooter .map {
+    justify-content: flex-start;
+  }
+}
+/*Todos los Main*/
+main {
+  background-color: #ca9e3f;
+  padding-bottom: 3%;
+}
+
+/* Main Index */
+.banner {
+  background-image: url(../imagenes/backgroundimageindex.png);
+  padding: 15% 0%;
+  background-size: cover;
+  background-position: center;
+}
+.banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  text-shadow: -5px -3px 4px rgba(34, 34, 34, 0.925);
+}
+
+.col-md-4 {
+  padding: 3% 2% 2% 1%;
+}
+
+.cardIndex {
+  background-color: #f1d79d;
+  box-shadow: rgb(104, 49, 11) 5px 7px 7px;
+}
+.cardIndex .card-title {
+  text-align: center;
+  font-weight: bold;
+}
+.cardIndex .cardIndexText {
+  text-align: center;
+}
+.cardIndex:hover {
+  filter: opacity(0.5);
+}
+
+/* Main Productos */
+.mainProductos {
+  padding-top: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.mainProductos h1 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3%;
+}
+.mainProductos h2 {
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+.mainProductos p {
+  text-align: justify;
+}
+.mainProductos .contenedorAlimento {
+  padding-bottom: 2%;
+}
+.mainProductos .contenedorAlimento .cuadroAlimentoBalanceado {
+  padding-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 1%;
+  background-color: #f1d79d;
+  border-radius: 20px;
+}
+.mainProductos .contenedorAlimento .containerProductos {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 80%;
+}
+.mainProductos .contenedorAlimento .imgBalanceadoPerro {
+  width: 80%;
+}
+.mainProductos .contenedorAlimento .imgBalanceadoGato {
+  width: 95%;
+}
+.mainProductos .contenedorAyJ {
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+.mainProductos .contenedorAyJ .cuadroAccesoriosyJuguetes {
+  padding-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 1%;
+  background-color: #f1d79d;
+  border-radius: 20px;
+}
+.mainProductos .contenedorAyJ .imgAccesorios {
+  width: 73%;
+}
+.mainProductos .contenedorAyJ .imgJuguetes {
+  width: 90%;
+}
+.mainProductos .contenedorPyM {
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+.mainProductos .contenedorPyM .cuadroPipetasyMas {
+  padding-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 1%;
+  background-color: #f1d79d;
+  border-radius: 20px;
+}
+.mainProductos .contenedorPyM .imgPipeta {
+  width: 97%;
+}
+.mainProductos .contenedorPyM .imgVacuna {
+  width: 100%;
+}
+
+/* Main Servicios */
+.mainServicios {
+  padding-top: 2%;
+}
+.mainServicios h1 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3%;
+}
+.mainServicios h2 {
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 2%;
+}
+.mainServicios .serviciosVeterinarios {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2%;
+}
+.mainServicios .serviciosVeterinarios .textoVete {
+  padding: 2% 2% 2% 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  background-color: #f1d79d;
+  border-radius: 20px;
+  text-align: justify;
+}
+.mainServicios .serviciosVeterinarios .imgServVeterinaria {
+  width: 50%;
+  border-radius: 20px;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+.mainServicios .serviciosPeluqueria {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2%;
+}
+.mainServicios .serviciosPeluqueria .textoPelu {
+  padding: 2% 2% 2% 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  background-color: #f1d79d;
+  border-radius: 20px;
+  text-align: justify;
+}
+.mainServicios .serviciosPeluqueria .imgPeluqueria {
+  width: 25%;
+  border-radius: 20px;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
+/* Responsive Servicios */
+@media screen and (max-width: 768px) {
+  .serviciosVeterinarios {
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgServVeterinaria {
+    width: 85%;
+    height: 100%;
+    margin-top: 2%;
+  }
+  .serviciosPeluqueria {
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgPeluqueria {
+    width: 85%;
+    height: 100%;
+    margin-bottom: 2%;
+  }
+}
+/* Main Conocenos */
+.mainConocenos {
+  padding-top: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.mainConocenos h1 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2%;
+}
+.mainConocenos .textoHistoria {
+  padding: 2% 2% 1% 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+  background-color: #f1d79d;
+  border-radius: 20px;
+  text-align: justify;
+}
+.mainConocenos .imgsHistoria {
+  padding: 2% 2% 1% 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.mainConocenos .imgQuique {
+  width: 40%;
+  border-radius: 20px;
+  margin-right: 2%;
+}
+.mainConocenos .imgCarras {
+  width: 40%;
+  border-radius: 20px;
+  margin-left: 2%;
+}
+
+/* Responsive Conocenos */
+@media screen and (max-width: 768px) {
+  .imgsHistoria {
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgQuique {
+    width: 85%;
+    height: 100%;
+    margin: 2%;
+  }
+  .imgCarras {
+    width: 85%;
+    height: 100%;
+    margin: 2%;
+  }
+}
+/* Main Contacto */
+.contenidoContacto {
+  padding-top: 1%;
+  padding-left: 2%;
+}
+.contenidoContacto .horariosUbicacion {
+  padding: 1% 1% 6% 3%;
+  display: flex;
+  flex-direction: wrap;
+}
+.contenidoContacto .horariosAtencion {
+  background-color: #f1d79d;
+  border-radius: 20px;
+  margin-right: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding: 2% 2% 2% 2%;
+  text-align: center;
+}
+.contenidoContacto .horariosAtencion h2 {
+  font-weight: bold;
+}
+.contenidoContacto .mapaContacto {
+  width: 200%;
+  height: 18.75rem;
+}
+.contenidoContacto .btnContacto {
+  background-color: #f1d79d;
+  padding: 1% 1%;
+}
+
+/* Responsive Contacto */
+@media screen and (max-width: 768px) {
+  .horariosUbicacion {
+    flex-direction: column;
+    align-items: center;
+  }
+  iframe {
+    max-width: 100%;
+    height: auto;
+  }
+  .horariosAtencion {
+    margin: 10px 0;
+  }
+}/*# sourceMappingURL=estilo.css.map */
