@@ -1,36 +1,39 @@
 /* Main Servicios */
 
-.mainServicios{
+.mainServicios {
     padding-top: 2%;
 
-    h1{
+    h1 {
         font-weight: bold;
         text-align: center;
         margin-bottom: 3%;
     }
 
-    h2{
+    h2 {
         font-weight: bold;
         text-decoration: underline;
         text-align: center;
         margin-bottom: 2%;
     }
 
-    .serviciosVeterinarios{
+    .serviciosVeterinarios,
+    .serviciosPeluqueria {
         display: flex;
         flex-direction: row;
         padding-bottom: 2%;
 
-        .textoVete{
-            padding: 2% 2% 2% 1%; 
+        .textoVete,
+        .textoPelu {
+            padding: 2% 2% 2% 1%;
             margin-left: 1%;
             margin-right: 1%;
             background-color: $marronclaro;
             border-radius: 20px;
             text-align: justify;
         }
-        
-        .imgServVeterinaria{
+
+        .imgServVeterinaria,
+        .imgPeluqueria {
             width: 50%;
             border-radius: 20px;
             margin-right: 1%;
@@ -38,51 +41,26 @@
         }
     }
 
-    .serviciosPeluqueria{
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 2%;
-
-        .textoPelu{
-            padding: 2% 2% 2% 1%; 
-            margin-left: 1%;
-            margin-right: 1%;
-            background-color: $marronclaro;
-            border-radius: 20px;
-            text-align: justify;    
+    @include mobile {
+        @media screen and (max-width: 768px) {
+            .serviciosVeterinarios,
+            .serviciosPeluqueria {
+              flex-direction: column;
+              align-items: center;
+            }
+          
+            .textoVete,
+            .textoPelu {
+              width: 85%;
+              margin: 2% auto; 
+            }
+          
+            .imgServVeterinaria,
+            .imgPeluqueria {
+              width: 85%;
+              height: 100%;
+              margin: 2% auto; 
+            }
         }
-        
-        .imgPeluqueria{
-            width: 25%;
-            border-radius: 20px;
-            margin-right: 1%;
-            margin-left: 1%;
-        }
     }
-}
-
-
-/* Responsive Servicios */
-@media screen and (max-width: 768px) {
-    .serviciosVeterinarios{
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .imgServVeterinaria{
-      width: 85%;
-      height: 100%;
-      margin-top: 2%;
-    }
-
-    .serviciosPeluqueria{
-      flex-direction: column;
-      align-items: center;
-    } 
-
-    .imgPeluqueria{
-      width: 85%;
-      height: 100%;
-      margin-bottom: 2%;
-    }
-}
+}    

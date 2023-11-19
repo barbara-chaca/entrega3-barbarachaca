@@ -25,37 +25,36 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-    }
+
+        .imgQuique{   
+            width: 40%;
+            border-radius: 20px;
+            margin-right: 2%;
+        }
+        
+        .imgCarras{
+            width: 40%;
+            border-radius: 20px;
+            margin-left: 2%;
+        }
+    }    
+
+    @media screen and (max-width: 768px) {
+        .imgsHistoria{
+          flex-direction: column;
+          align-items: center;
+        }
     
-    .imgQuique{   
-        width: 40%;
-        border-radius: 20px;
-        margin-right: 2%;
-    }
+        .imgQuique{
+          width: 85%;
+          height: 100%;
+          margin: 2%;
+        }
     
-    .imgCarras{
-        width: 40%;
-        border-radius: 20px;
-        margin-left: 2%;
-    }
-}
-
-/* Responsive Conocenos */
-@media screen and (max-width: 768px) {
-    .imgsHistoria{
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .imgQuique{
-      width: 85%;
-      height: 100%;
-      margin: 2%;
-    }
-
-    .imgCarras{
-      width: 85%;
-      height: 100%;
-      margin: 2%;
+        .imgCarras{
+          width: 85%;
+          height: 100%;
+          margin: 2%;
+        }
     }
 }

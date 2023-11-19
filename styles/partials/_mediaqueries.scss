@@ -1,0 +1,27 @@
+/* Responsive Footer */
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+/* Responsive Servicios */
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  } 
+}
+
+/* Responsive Conocenos */
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  } 
+}
+
+/* Responsive Contacto */
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  } 
+}

@@ -60,26 +60,26 @@ footer{
         flex-direction: row;
         justify-content: flex-end;
     }
+
+    @include mobile {
+        .contenidoFooter {
+            grid-template-areas:
+              "instagram"
+              "whatsapp"
+              "facebook"
+              "map";
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto;
+            gap: 5px;
+        
+            .whatsapp {
+              justify-content: flex-start;
+            }
+        
+            .map {
+              justify-content: flex-start;
+            }
+        }
+    }   
 }
 
-/* Responsive Footer */
-@media (max-width: 768px) {
-    .contenidoFooter {
-        grid-template-areas:
-            "instagram"
-            "whatsapp"
-            "facebook"
-            "map";
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-        gap: 5px;
-
-        .whatsapp{
-            justify-content: flex-start;
-        }
-
-        .map{
-            justify-content: flex-start;
-        }
-    }
-}
