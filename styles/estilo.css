@@ -1,7 +1,3 @@
-/* Responsive Footer */
-/* Responsive Servicios */
-/* Responsive Conocenos */
-/* Responsive Contacto */
 @import url("https://fonts.googleapis.com/css2?family=Manjari&family=Nunito&family=Raleway&family=Ubuntu&display=swap");
 * {
   padding: 0;
@@ -251,7 +247,7 @@ main {
 .mainServicios .serviciosVeterinarios .imgPeluqueria,
 .mainServicios .serviciosPeluqueria .imgServVeterinaria,
 .mainServicios .serviciosPeluqueria .imgPeluqueria {
-  width: 50%;
+  width: 40%;
   border-radius: 20px;
   margin-right: 1%;
   margin-left: 1%;
@@ -269,8 +265,8 @@ main {
   }
   .mainServicios .imgServVeterinaria,
   .mainServicios .imgPeluqueria {
-    width: 85%;
-    height: 100%;
+    width: 60%;
+    height: 85%;
     margin: 2% auto;
   }
 }
@@ -301,12 +297,12 @@ main {
   justify-content: space-around;
 }
 .mainConocenos .imgsHistoria .imgQuique {
-  width: 40%;
+  width: 50%;
   border-radius: 20px;
   margin-right: 2%;
 }
 .mainConocenos .imgsHistoria .imgCarras {
-  width: 40%;
+  width: 50%;
   border-radius: 20px;
   margin-left: 2%;
 }
@@ -314,15 +310,12 @@ main {
   .mainConocenos .imgsHistoria {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   .mainConocenos .imgQuique {
-    width: 85%;
-    height: 100%;
     margin: 2%;
   }
   .mainConocenos .imgCarras {
-    width: 85%;
-    height: 100%;
     margin: 2%;
   }
 }

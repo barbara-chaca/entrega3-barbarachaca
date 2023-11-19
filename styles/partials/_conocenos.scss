@@ -27,13 +27,13 @@
         justify-content: space-around;
 
         .imgQuique{   
-            width: 40%;
+            width: 50%;
             border-radius: 20px;
             margin-right: 2%;
         }
         
         .imgCarras{
-            width: 40%;
+            width: 50%;
             border-radius: 20px;
             margin-left: 2%;
         }
@@ -43,17 +43,14 @@
         .imgsHistoria{
           flex-direction: column;
           align-items: center;
+          width: 100%;
         }
     
         .imgQuique{
-          width: 85%;
-          height: 100%;
           margin: 2%;
         }
     
         .imgCarras{
-          width: 85%;
-          height: 100%;
           margin: 2%;
         }
     }
