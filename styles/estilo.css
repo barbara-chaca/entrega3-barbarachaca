@@ -268,11 +268,7 @@ main {
     width: 85%;
     margin: 2% auto;
   }
-  .mainServicios .imgServVeterinaria {
-    width: 80%;
-    margin: 2% auto;
-  }
-  .mainServicios .imgPeluqueria {
+  .mainServicios .imgServVeterinaria .imgPeluqueria {
     margin: 2% auto;
   }
 }
