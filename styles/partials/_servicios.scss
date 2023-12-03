@@ -32,13 +32,19 @@
             text-align: justify;
         }
 
-        .imgServVeterinaria,
-        .imgPeluqueria {
-            width: 40%;
+        .imgServVeterinaria {
+            width: 50%;
             border-radius: 20px;
             margin-right: 1%;
             margin-left: 1%;
         }
+
+        .imgPeluqueria {
+            width: 30%;
+            border-radius: 20px;
+            margin-right: 1%;
+            margin-left: 1%;
+        } 
     }
 
     @include mobile {
@@ -55,11 +61,9 @@
               margin: 2% auto; 
             }
           
-            .imgServVeterinaria,
+            .imgServVeterinaria
             .imgPeluqueria {
-              width: 60%;
-              height: 85%;
-              margin: 2% auto; 
+                margin: 2% auto; 
             }
         }
     }

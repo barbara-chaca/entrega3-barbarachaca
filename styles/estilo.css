@@ -244,10 +244,15 @@ main {
   text-align: justify;
 }
 .mainServicios .serviciosVeterinarios .imgServVeterinaria,
+.mainServicios .serviciosPeluqueria .imgServVeterinaria {
+  width: 50%;
+  border-radius: 20px;
+  margin-right: 1%;
+  margin-left: 1%;
+}
 .mainServicios .serviciosVeterinarios .imgPeluqueria,
-.mainServicios .serviciosPeluqueria .imgServVeterinaria,
 .mainServicios .serviciosPeluqueria .imgPeluqueria {
-  width: 40%;
+  width: 30%;
   border-radius: 20px;
   margin-right: 1%;
   margin-left: 1%;
@@ -263,10 +268,11 @@ main {
     width: 85%;
     margin: 2% auto;
   }
-  .mainServicios .imgServVeterinaria,
+  .mainServicios .imgServVeterinaria {
+    width: 80%;
+    margin: 2% auto;
+  }
   .mainServicios .imgPeluqueria {
-    width: 60%;
-    height: 85%;
     margin: 2% auto;
   }
 }
@@ -324,6 +330,7 @@ main {
 .contenidoContacto {
   padding-top: 1%;
   padding-left: 2%;
+  padding-right: 2%;
 }
 .contenidoContacto .horariosUbicacion {
   padding: 1% 1% 6% 3%;
